@@ -1,0 +1,141 @@
+body {
+  background-color: #f5eeee;
+}
+
+.bodyContent {
+  max-width: 1920px;
+}
+
+.bannerImageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+}
+
+button .primary {
+  width: 163;
+  height: 61;
+  opacity: 1;
+  top: 20px;
+  left: 20px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 8px;
+  background-color: #d4566f;
+}
+
+button .primary:hover {
+  background-color: #ffa6b7;
+}
+
+.bodyWithList {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.divider {
+  width: 2px;
+  height: auto;
+  background-color: #8aa693;
+  border: 1px solid #8aa693;
+}
+
+.bodyWithList-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.funFactsList {
+  list-style-image: url();
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.favoritePlaces {
+  display: flex;
+  justify-content: space-between;
+}
+
+.favoritePlaces:nth-of-type(2) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.favoritePlaces-contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 0;
+}
+
+.favoritePlaces-content {
+  padding: 0px 48px;
+}
+
+.favoritePlacesImageWrapper {
+  flex: 1 1 0;
+}
+
+.favoritePlacesImageWrapper > img {
+  width: 100%;
+}
+
+.morePicturesWrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.morePicturesWrapper > img {
+  flex: 1 1 0;
+}
+
+img {
+  border-radius: 8px;
+}
+
+h2 {
+  font-family: Vibur;
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #d4566f;
+}
+
+h3 {
+  font-family: Vibur;
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+h4 {
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-style: Semibold;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+p,
+li {
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
