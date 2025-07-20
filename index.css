@@ -138,6 +138,17 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.funFactsList > li {
+  display: flex;
+}
+
+.funFactsList > li::before {
+  margin-right: 24px;
+  content: url("./images/emoji_objects.png");
 }
 
 .favoritePlaces {
@@ -219,8 +230,33 @@ a {
   padding: 0px 24px;
 }
 
+.nextTrips-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
 .nextTrips-list > li {
   margin-bottom: 24px;
+}
+
+.nextTrips-list > li:nth-of-type(1):before {
+  content: url("./images/location_on.png");
+  margin-right: 24px;
+}
+
+.nextTrips-list > li:nth-of-type(2):before {
+  content: url("./images/timelapse.png");
+  margin-right: 24px;
+}
+
+.nextTrips-list > li:nth-of-type(3):before {
+  content: url("./images/local_fire_deparment.png");
+  margin-right: 24px;
+}
+
+.nextTrips-list > li:nth-of-type(4):before {
+  content: url("./images/paid.png");
+  margin-right: 24px;
 }
 
 img {
