@@ -1,3 +1,20 @@
+@font-face {
+  font-family: Segoe UI;
+  src: url("./fonts/Segoe/segoeuithis.ttf");
+}
+
+@font-face {
+  font-family: Segoe UI;
+  src: url("./fonts/Segoe/segoeuithisi.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Segoe UI;
+  src: url("./fonts/Segoe/segoeuithibd.ttf");
+  font-weight: bold;
+}
+
 body {
   background-color: #f5eeee;
 }
