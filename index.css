@@ -264,3 +264,40 @@ li {
   line-height: 100%;
   letter-spacing: 0%;
 }
+
+#about_reasons {
+  display: flex;
+  gap: 24px;
+}
+
+.about_reason {
+  flex: 1 1 0;
+  border-left: 2px solid #d4566f;
+  padding-left: 24px;
+}
+
+.about_reason:nth-of-type(2) {
+  border-left: 2px solid #8aa693;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0px;
+  border-bottom: 1.5px solid #2e2e2e;
+  margin-bottom: 48px;
+}
+
+.nav_element {
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 8px;
+}
+
+.nav_element.active > a {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #d4566f;
+}
