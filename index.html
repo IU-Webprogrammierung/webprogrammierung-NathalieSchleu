@@ -1,17 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vibur&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nathalie Schleu</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeineWebsite</title>
-</head>
+  <body>
+    <div id="main_banner">
+      <div id="main_banner_content">
+        <h2>Das Leben ist eine Reise!</h2>
+        <p>
+          Die Welt hat viele schöne Orte. Manche sind bekannt, manche noch ein
+          versteckter Diamant. Ich hatte das Privileg, bereits viele Orte dieser
+          Welt sehen zu dürfen. Was mich jedoch am meisten bewegt hat, waren
+          meine Reisen nach Asien. Auf dieser Website möchte ich diese
+          wertvollen Erinnerungen festhalten.
+        </p>
+      </div>
+    </div>
+    <div class="bodyContent">
+      <h3>Über mich</h3>
+      <p>
+        Ich, Nathalie, bin in Berlin geboren und aufgewachsen. Was mich jedoch
+        den Großteil meines Lebens begleitet, ist meine Liebe zu Asien - ganz
+        besonders Japan. Wenn du mehr erfahren möchtest, dann klicke auf den
+        Button!
+      </p>
+      <button class="primary">
+        <a href="./pages/about/about.html">Über mich</a>
+      </button>
 
-<body>
-    <h1>Überschrift 1</h1>
-    <p>Hier ist ein toller Satz! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas voluptatibus sequi
-        laborum perspiciatis minus eveniet culpa unde? Commodi aperiam omnis laudantium quod vero voluptatibus numquam
-        maiores vel sequi aut?
-</body>
+      <h3>Meine Reisen</h3>
+      <p>
+        Ob es die Erfüllung meines größten Traumes ist, das Kennenlernen der
+        laotischen Familie meines Partners oder der Besuch meiner besten
+        Freundin - jede Reise war etwas ganz Besonderes für mich.
+      </p>
 
+      <div id="main_myTrips">
+        <div class="main_myTrip">
+          <img src="./images/trip1.JPG" height="261" />
+          <button class="primary">
+            <a href="./pages/japan/japan.html">Japan</a>
+          </button>
+        </div>
+
+        <div class="main_myTrip">
+          <img src="./images/trip2.JPG" height="261" />
+          <button class="primary">
+            <a href="./pages/laos/laos.html">Laos</a>
+          </button>
+        </div>
+
+        <div class="main_myTrip">
+          <img src="./images/trip3.JPG" height="261" />
+          <button class="primary">
+            <a href="./pages/korea/korea.html">Korea</a>
+          </button>
+        </div>
+      </div>
+
+      <div id="main_nextTrips">
+        <div>
+          <h3>Du möchtest mehr sehen?</h3>
+          <p>
+            Noch nicht genug? Oder vielleicht neugierig geworden? Dann klicke
+            hier!
+          </p>
+        </div>
+        <button class="secondary">
+          <a href="./pages/nextTrips/nextTrips.html">Meine nächsten Reisen</a>
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
