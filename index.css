@@ -26,7 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 488px;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 #main_banner_content {
@@ -42,15 +42,15 @@ body {
 
 #main_myTrips {
   display: flex;
-  gap: 24px;
-  margin-top: 48px;
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .main_myTrip {
   display: flex;
   flex-direction: column;
   flex: 1 1 0;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .main_myTrip > button {
@@ -60,11 +60,11 @@ body {
 #main_nextTrips {
   background-color: #8aa693;
   display: flex;
-  padding: 0 24px;
+  padding: 0 1.5rem;
   justify-content: space-between;
   border-radius: 8px;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 3rem;
 }
 
 .bodyContent {
@@ -79,16 +79,16 @@ body {
 
 button.primary {
   opacity: 1;
-  padding-top: 16px;
-  padding-right: 24px;
-  padding-bottom: 16px;
-  padding-left: 24px;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
   border-radius: 8px;
   background-color: #d4566f;
   border: none;
   width: fit-content;
   height: fit-content;
-  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0rem 0.25rem 0.25rem 0rem #00000040;
 }
 
 button.primary:hover {
@@ -99,14 +99,14 @@ button.secondary {
   width: fit-content;
   height: fit-content;
   opacity: 1;
-  padding-top: 16px;
-  padding-right: 24px;
-  padding-bottom: 16px;
-  padding-left: 24px;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
   border-radius: 8px;
   background-color: #f5eeee;
   border: none;
-  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0rem 4px 4px 0rem #00000040;
 }
 
 button.secondary:hover {
@@ -137,7 +137,7 @@ a {
 .bodyWithList {
   display: flex;
   flex-direction: row;
-  gap: 48px;
+  gap: 3rem;
 }
 
 .divider {
@@ -156,9 +156,9 @@ a {
 .funFactsList {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0rem;
 }
 
 .funFactsList > li {
@@ -166,7 +166,7 @@ a {
 }
 
 .funFactsList > li::before {
-  margin-right: 24px;
+  margin-right: 1.5rem;
   content: url("./images/emoji_objects.png");
 }
 
@@ -189,7 +189,7 @@ a {
 }
 
 .favoritePlaces-content {
-  padding: 0px 48px;
+  padding: 0rem 3rem;
 }
 
 .favoritePlacesImageWrapper {
@@ -202,21 +202,24 @@ a {
 
 .morePicturesWrapper {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 .morePicturesWrapper > img {
-  flex: 1 1 0;
+  width: 100%;
+  max-width: 32%;
+  height: auto;
 }
 
 .nextTrips-banner {
   background-image: url("./pages/nextTrips/images/banner.jpg");
   color: #ffebf2;
   display: flex;
-  padding: 48px;
-  gap: 24px;
-  margin: 48px 0px;
+  padding: 3rem;
+  gap: 1.5rem;
+  margin: 3rem 0rem;
+  border-radius: 8px;
 }
 
 .nextTrips-banner-left {
@@ -228,55 +231,61 @@ a {
 .nextTrips {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .nextTrips > div {
   display: flex;
   flex-direction: row;
-  gap: 48px;
+  gap: 3rem;
 }
 
 .nextTrip {
   border: 2px solid #839b8d;
   border-radius: 8px;
-  gap: 24px;
+  gap: 1.5rem;
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
 }
 
+.nextTrip > img {
+  height: auto;
+  width: 100%;
+  min-height: 382px;
+}
+
 .nextTrip-content {
-  padding: 0px 24px;
+  padding: 0rem 1.5rem;
 }
 
 .nextTrips-list {
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0rem;
 }
 
 .nextTrips-list > li {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .nextTrips-list > li:nth-of-type(1):before {
   content: url("./images/location_on.png");
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 .nextTrips-list > li:nth-of-type(2):before {
   content: url("./images/timelapse.png");
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 .nextTrips-list > li:nth-of-type(3):before {
   content: url("./images/local_fire_deparment.png");
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 .nextTrips-list > li:nth-of-type(4):before {
   content: url("./images/paid.png");
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 img {
@@ -316,20 +325,20 @@ li {
   font-family: Segoe UI;
   font-weight: 400;
   font-style: Regular;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 100%;
   letter-spacing: 0%;
 }
 
 #about_reasons {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .about_reason {
   flex: 1 1 0;
   border-left: 2px solid #d4566f;
-  padding-left: 24px;
+  padding-left: 1.5rem;
 }
 
 .about_reason:nth-of-type(2) {
@@ -339,16 +348,16 @@ li {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 16px 0px;
+  padding: 1rem 0rem;
   border-bottom: 1.5px solid #2e2e2e;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 .nav_element {
-  padding-top: 16px;
-  padding-right: 24px;
-  padding-bottom: 16px;
-  padding-left: 24px;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
   border-radius: 8px;
 }
 
@@ -356,4 +365,19 @@ nav {
   text-decoration: underline;
   text-decoration-style: solid;
   color: #d4566f;
+}
+
+footer {
+  border-top: 1.5px solid #2e2e2e;
+  padding: 1.5rem 0rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer > span {
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1rem;
 }
