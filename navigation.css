@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  border-bottom: 1.5px solid #2e2e2e;
+}
+
+.nav_element {
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  border-radius: 8px;
+}
+
+.nav_element.active > a {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #d4566f;
+}
+
+@media (max-width: 1023px) {
+  .nav_element {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 8px;
+  }
+}

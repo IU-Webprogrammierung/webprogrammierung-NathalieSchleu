@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="./nextTrips.css" />
+    <link rel="stylesheet" href="../../navigation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,38 +27,39 @@
           <a href="../nextTrips/nextTrips.html active">Nächste Reisen</a>
         </div>
       </nav>
-      <h1>Meine nächsten Reiseziele</h1>
 
-      <p>
-        Natürlich enden meine Reisen nicht. Ich möchte noch so vieles mehr von
-        der Welt sehen. Und deswegen habe ich mir überlegt, welche Länder ich in
-        den nächsten Jahren besuchen möchte.
-      </p>
+      <div class="flex_column_gap_24">
+        <h1>Meine nächsten Reiseziele</h1>
 
-      <div class="nextTrips-banner">
-        <div class="nextTrips-banner-left">
+        <p>
+          Natürlich enden meine Reisen nicht. Ich möchte noch so vieles mehr von
+          der Welt sehen. Und deswegen habe ich mir überlegt, welche Länder ich
+          in den nächsten Jahren besuchen möchte.
+        </p>
+      </div>
+
+      <div id="nextTrips_banner">
+        <div id="nextTrips_banner_left">
           <h2>Welche Kriterien muss das Land erfüllen?</h2>
         </div>
 
-        <div>
-          <div>
+        <div class="flex_column_gap_48">
+          <div class="nextTrips_banner_right_criteria flex_column_gap_24">
             <h3>Essen</h3>
             <p>Essen steht für mich meistens an erster Stelle!</p>
           </div>
-
-          <div>
-            <h3>Temperaturen</h3>
-            <p>Da ich schnell friere, sollte es warm genug sein.</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
+          <div class="nextTrips_banner_right_criteria flex_column_gap_24">
             <h3>Sicherheit</h3>
             <p>Ich muss mich sicher durch die Straßen bewegen können.</p>
           </div>
+        </div>
 
-          <div>
+        <div class="flex_column_gap_48">
+          <div class="nextTrips_banner_right_criteria flex_column_gap_24">
+            <h3>Temperaturen</h3>
+            <p>Da ich schnell friere, sollte es warm genug sein.</p>
+          </div>
+          <div class="nextTrips_banner_right_criteria flex_column_gap_24">
             <h3>Kultur</h3>
             <p>Ich möchte Tempel, Ruinen, eine Alstadt sehen!</p>
           </div>
@@ -75,7 +78,7 @@
           <div class="nextTrip">
             <img src="./images/next1.jpg" alt="Thailand" />
 
-            <div class="nextTrip-content">
+            <div class="nextTrip_content flex_column_gap_24">
               <h3>Thailand</h3>
 
               <p>
@@ -83,7 +86,7 @@
                 tropischen Strände. Es verbindet Kultur, Genuss und Entspannung.
               </p>
 
-              <ul class="nextTrips-list">
+              <ul class="nextTrips_list">
                 <li>Südostasien</li>
                 <li>+5 - +6 Stunden</li>
                 <li>25° - 35° C</li>
@@ -95,7 +98,7 @@
           <div class="nextTrip">
             <img src="./images/next2.jpg" alt="Vietnam" />
 
-            <div class="nextTrip-content">
+            <div class="nextTrip_content flex_column_gap_24">
               <h3>Vietnam</h3>
 
               <p>
@@ -104,7 +107,7 @@
                 eine tolle aromatische Küche.
               </p>
 
-              <ul class="nextTrips-list">
+              <ul class="nextTrips_list">
                 <li>Südostasien</li>
                 <li>+5 - +6 Stunden</li>
                 <li>15° - 35° C</li>
@@ -118,7 +121,7 @@
           <div class="nextTrip">
             <img src="./images/next3.jpg" alt="Indonesien" />
 
-            <div class="nextTrip-content">
+            <div class="nextTrip_content flex_column_gap_24">
               <h3>Indonesien</h3>
 
               <p>
@@ -127,7 +130,7 @@
                 Kultur und Gelassenheit.
               </p>
 
-              <ul class="nextTrips-list">
+              <ul class="nextTrips_list">
                 <li>Südostasien</li>
                 <li>+5 - +6 Stunden</li>
                 <li>27° - 33° C</li>
@@ -139,7 +142,7 @@
           <div class="nextTrip">
             <img src="./images/next4.jpg" alt="China" />
 
-            <div class="nextTrip-content">
+            <div class="nextTrip_content flex_column_gap_24">
               <h3>China</h3>
 
               <p>
@@ -148,7 +151,7 @@
                 einen in eine andere Welt eintauchen.
               </p>
 
-              <ul class="nextTrips-list">
+              <ul class="nextTrips_list">
                 <li>Ostasien</li>
                 <li>+6 - +7 Stunden</li>
                 <li>-10° - 35° C</li>
@@ -158,6 +161,9 @@
           </div>
         </div>
       </div>
+      <footer>
+        <span>Copyright Nathalie Schleu 2025</span>
+      </footer>
     </div>
   </body>
 </html>

@@ -1,0 +1,106 @@
+.trip_banner_image_wrapper > img {
+  width: 100%;
+}
+
+.trip_reasons {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.trip_reasons_left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.trip_reasons_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trip_funFacts_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style-type: none;
+  padding-left: 0rem;
+}
+
+.trip_funFacts_list > li {
+  display: flex;
+}
+
+.trip_funFacts_list > li::before {
+  margin-right: 1.5rem;
+  content: url("./images/emoji_objects.png");
+}
+
+.trip_favoritePlaces_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trip_favoritePlaces {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trip_favoritePlaces:nth-of-type(2) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.trip_favoritePlaces_content_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 0;
+}
+
+.trip_favoritePlaces_content {
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trip_favoritePlaces_image_wrapper {
+  flex: 1 1 0;
+}
+
+.trip_favoritePlaces_image_wrapper > img {
+  width: 100%;
+}
+
+.trip_more_pictures {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.trip_more_pictures > img {
+  width: 100%;
+  max-width: 32%;
+  height: auto;
+}
+
+.trip_header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 1023px) {
+  .trip_favoritePlaces_content {
+    padding: 0rem 1rem;
+  }
+
+  .trip_more_pictures {
+    gap: 0.5rem;
+  }
+}

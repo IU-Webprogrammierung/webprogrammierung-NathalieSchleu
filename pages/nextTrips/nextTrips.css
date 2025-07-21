@@ -1,0 +1,96 @@
+#nextTrips_banner {
+  background-image: url("./images/banner.jpg");
+  color: #ffebf2;
+  display: flex;
+  padding: 3rem;
+  gap: 1.5rem;
+  border-radius: 8px;
+}
+
+#nextTrips_banner_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextTrips {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nextTrips > div {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.nextTrip {
+  border: 2px solid #839b8d;
+  border-radius: 8px;
+  gap: 1.5rem;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nextTrip > img {
+  height: auto;
+  width: 100%;
+}
+
+.nextTrip_content {
+  padding: 0rem 1.5rem;
+}
+
+.nextTrips_list {
+  list-style-type: none;
+  padding-left: 0rem;
+}
+
+.nextTrips_list > li {
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.nextTrips_list > li:nth-of-type(1):before {
+  content: url("../../images/location_on.png");
+  margin-right: 1.5rem;
+}
+
+.nextTrips_list > li:nth-of-type(2):before {
+  content: url("../../images/timelapse.png");
+  margin-right: 1.5rem;
+}
+
+.nextTrips_list > li:nth-of-type(3):before {
+  content: url("../../images/local_fire_deparment.png");
+  margin-right: 1.5rem;
+}
+
+.nextTrips_list > li:nth-of-type(4):before {
+  content: url("../../images/paid.png");
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 1023px) {
+  .nextTrips {
+    gap: 8px;
+  }
+
+  .nextTrips > div {
+    gap: 8px;
+  }
+
+  .nextTrips_list > li {
+    margin-bottom: 0.5rem;
+  }
+
+  .nextTrips_banner_right_criteria > h3 {
+    text-align: center;
+  }
+
+  #nextTrips_banner {
+    padding: 0.5rem;
+  }
+}
