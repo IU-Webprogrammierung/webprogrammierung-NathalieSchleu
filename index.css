@@ -32,12 +32,11 @@ body {
 #main_banner_content {
   max-width: 1140px;
   display: flex;
-  gap: 96px;
+  justify-content: space-between;
 }
 
-#main_banner_content > h2 {
+#main_banner_content > h1 {
   color: #2e2e2e;
-  text-wrap: nowrap;
 }
 
 #main_myTrips {
@@ -70,6 +69,30 @@ body {
 .bodyContent {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* small laptops */
+@media (max-width: 1399px) {
+  .bodyContent {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+/* large tablets */
+@media (max-width: 1023px) {
+  .bodyContent {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+/* phones */
+@media (max-width: 767px) {
+  .bodyContent {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .bannerImageWrapper {
@@ -292,7 +315,7 @@ img {
   border-radius: 6px;
 }
 
-h2 {
+h1 {
   font-family: Vibur;
   font-weight: 400;
   font-style: Medium;
@@ -302,7 +325,7 @@ h2 {
   color: #d4566f;
 }
 
-h3 {
+h2 {
   font-family: Vibur;
   font-weight: 400;
   font-style: Medium;
@@ -311,7 +334,7 @@ h3 {
   letter-spacing: 0%;
 }
 
-h4 {
+h3 {
   font-family: Segoe UI;
   font-weight: 600;
   font-style: Semibold;
