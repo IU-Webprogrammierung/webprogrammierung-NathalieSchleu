@@ -222,6 +222,122 @@ footer > span {
   font-size: 1rem;
 }
 
+/* phones */
+@media (max-width: 743px) {
+  .bodyContent {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    gap: 36px;
+  }
+
+  #main_banner {
+    margin-bottom: 2.25rem;
+    height: 396px;
+  }
+
+  #main_banner_content {
+    flex-direction: column;
+    gap: 48px;
+    padding: 0px 24px !important;
+  }
+
+  #main_banner_content > p {
+    width: 100%;
+  }
+
+  #main_nextTrips,
+  #main_myTrips {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main_myTrip {
+    gap: 0.5rem;
+  }
+
+  .main_myTrip > img {
+    height: 160px;
+  }
+
+  #main_nextTrips_content {
+    width: 100%;
+  }
+
+  .flex_column_gap_8 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .flex_column_gap_16 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  h1 {
+    font-family: Vibur;
+    font-weight: 400;
+    font-style: Medium;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  h2 {
+    font-family: Vibur;
+    font-weight: 400;
+    font-style: Medium;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  h3 {
+    font-family: Segoe UI;
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  p,
+  li {
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  img {
+    border-radius: 2px;
+  }
+
+  .divider {
+    width: 100%;
+    height: auto;
+    background-color: #8aa693;
+    border: 1px solid #8aa693;
+  }
+
+  a {
+    font-family: Segoe UI;
+    font-weight: 600 !important;
+    font-style: Semibold !important;
+    font-size: 14px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  button {
+    padding: 0.5rem !important;
+    box-shadow: none !important;
+  }
+}
+
 /* small laptops */
 @media (max-width: 1399px) {
   .bodyContent,
@@ -279,13 +395,5 @@ footer > span {
     font-size: 20px;
     line-height: 100%;
     text-wrap: nowrap;
-  }
-}
-
-/* phones */
-@media (max-width: 743px) {
-  .bodyContent {
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }

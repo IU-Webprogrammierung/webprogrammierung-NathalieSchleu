@@ -104,3 +104,35 @@
     gap: 0.5rem;
   }
 }
+
+@media (max-width: 743px) {
+  .trip_reasons,
+  .trip_favoritePlaces,
+  .trip_more_pictures {
+    flex-direction: column;
+  }
+
+  .trip_reasons {
+    gap: 1rem;
+  }
+
+  .trip_funFacts_list {
+    gap: 1rem;
+  }
+
+  .trip_favoritePlaces {
+    gap: 0.5rem;
+  }
+
+  .trip_favoritePlaces_content {
+    padding: 0rem;
+  }
+
+  .trip_favoritePlaces:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  .trip_more_pictures > img {
+    min-width: 100%;
+  }
+}

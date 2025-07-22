@@ -1,4 +1,4 @@
-nav {
+#nav_list {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0rem;
@@ -19,6 +19,11 @@ nav {
   color: #d4566f;
 }
 
+#nav_open_button,
+#nav_close_button {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   .nav_element {
     padding-top: 0.5rem;
@@ -26,5 +31,33 @@ nav {
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 743px) {
+  #nav_list {
+    display: none;
+    flex-direction: column;
+    backdrop-filter: blur(4px);
+    border: none;
+    position: absolute;
+    width: 100%;
+    background: #f5eeeeb2;
+    float: right;
+  }
+
+  #nav_open_button,
+  #nav_close_button {
+    display: block;
+    float: right;
+    border: none;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  #nav_close_button {
+    display: none;
+    z-index: 100;
+    position: relative;
   }
 }

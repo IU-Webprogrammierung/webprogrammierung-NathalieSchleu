@@ -90,7 +90,41 @@
     text-align: center;
   }
 
+  .nextTrip {
+    border: 1px solid #839b8d;
+    border-radius: 4px;
+  }
+
   #nextTrips_banner {
     padding: 0.5rem;
+  }
+}
+
+@media (max-width: 743px) {
+  #nextTrips_banner {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nextTrips_banner_right_criteria > h3 {
+    text-align: start;
+  }
+
+  .nextTrips {
+    flex-direction: column;
+  }
+
+  .nextTrips > div {
+    flex-direction: column;
+  }
+
+  .nextTrip {
+    border: 0.5px solid #8aa693;
+    border-radius: 4px;
+  }
+
+  .nextTrip_content {
+    padding: 0 0.5rem;
   }
 }
