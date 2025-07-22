@@ -32,18 +32,39 @@
     padding-left: 0.5rem;
     border-radius: 8px;
   }
+
+  #nav_open_button,
+  #nav_close_button {
+    display: none;
+  }
 }
 
 @media (max-width: 743px) {
   #nav_list {
     display: none;
     flex-direction: column;
+    gap: 32px;
     backdrop-filter: blur(4px);
     border: none;
     position: absolute;
-    width: 100%;
     background: #f5eeeeb2;
-    float: right;
+    top: 0;
+    left: 0;
+    height: 568px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: end;
+    padding-top: 36px;
+  }
+
+  .nav_element > a {
+    font-family: Segoe UI;
+    font-weight: 600 !important;
+    font-style: Semibold !important;
+    font-size: 18px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-right: 32px;
   }
 
   #nav_open_button,
@@ -53,6 +74,7 @@
     border: none;
     padding: 0 !important;
     margin: 0;
+    background: none;
   }
 
   #nav_close_button {

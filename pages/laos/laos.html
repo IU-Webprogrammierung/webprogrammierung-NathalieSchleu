@@ -15,19 +15,30 @@
   <body>
     <div class="bodyContent">
       <nav>
-        <div class="nav_element">
-          <a href="../about/about.html">Über mich</a>
+        <div id="nav_list">
+          <div class="nav_element">
+            <a href="../about/about.html">Über mich</a>
+          </div>
+          <div class="nav_element">
+            <a href="../japan/japan.html">Japan</a>
+          </div>
+          <div class="nav_element active">
+            <a href="../laos/laos.html">Laos</a>
+          </div>
+          <div class="nav_element">
+            <a href="../korea/korea.html">Südkorea</a>
+          </div>
+          <div class="nav_element">
+            <a href="../nextTrips/nextTrips.html active">Nächste Reisen</a>
+          </div>
         </div>
-        <div class="nav_element">
-          <a href="../japan/japan.html">Japan</a>
-        </div>
-        <div class="nav_element active">
-          <a href="../laos/laos.html">Laos</a>
-        </div>
-        <div class="nav_element"><a href="../korea/korea.html">Korea</a></div>
-        <div class="nav_element">
-          <a href="../nextTrips/nextTrips.html">Nächste Reisen</a>
-        </div>
+
+        <button id="nav_open_button" onclick="openMenu()">
+          <img src="../../images/menu.png" />
+        </button>
+        <button id="nav_close_button" onclick="closeMenu()">
+          <img src="../../images/close.png" />
+        </button>
       </nav>
       <div class="trip_banner_image_wrapper">
         <img
@@ -174,5 +185,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function openMenu() {
+        document.getElementById("nav_open_button").style.display = "none";
+        document.getElementById("nav_close_button").style.display = "block";
+
+        document.getElementById("nav_list").style.display = "flex";
+      }
+
+      function closeMenu() {
+        document.getElementById("nav_open_button").style.display = "block";
+        document.getElementById("nav_close_button").style.display = "none";
+        document.getElementById("nav_list").style.display = "none";
+      }
+    </script>
   </body>
 </html>
