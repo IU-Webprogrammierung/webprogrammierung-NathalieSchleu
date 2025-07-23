@@ -5,13 +5,55 @@
 
 .about_reason {
   flex: 1 1 0;
-  border-left: 2px solid #d4566f;
+  border-left: 2px solid #c73259;
   padding-left: 1.5rem;
 }
 
 .about_reason:nth-of-type(2) {
   border-left: 2px solid #8aa693;
 }
+
+#about_timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_timeline_row {
+  display: flex;
+}
+
+.about_timeline_item {
+  flex: 1 1 0;
+  padding: 1.5rem;
+}
+
+.about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(even),
+.about_timeline_row:nth-of-type(2) > .about_timeline_item:nth-of-type(odd) {
+  border-left: 2px solid #c73259;
+}
+
+.about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(1),
+.about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(2) {
+  border-bottom: 2px solid #c73259;
+}
+
+@media (max-width: 1023px) {
+  .about_timeline_item {
+    flex: 1 1 0;
+    padding: 0.5rem;
+  }
+
+  .about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(even),
+  .about_timeline_row:nth-of-type(2) > .about_timeline_item:nth-of-type(odd) {
+    border-left: 1px solid #c73259;
+  }
+
+  .about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(1),
+  .about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(2) {
+    border-bottom: 1px solid #c73259;
+  }
+}
+
 @media (max-width: 743px) {
   #about_reasons {
     flex-direction: column;
@@ -20,5 +62,31 @@
 
   .about_reason {
     padding-left: 0.5rem;
+  }
+
+  #about_timeline {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about_timeline_row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_timeline_item {
+    flex: 1 1 0;
+    padding: 1.5rem;
+  }
+
+  .about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(even),
+  .about_timeline_row:nth-of-type(2) > .about_timeline_item:nth-of-type(odd) {
+    border-top: 1px solid #c73259;
+    border-left: none;
+  }
+
+  .about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(1),
+  .about_timeline_row:nth-of-type(1) > .about_timeline_item:nth-of-type(2) {
+    border-bottom: 1px solid #c73259;
   }
 }

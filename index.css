@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #f5eeee;
+  background-color: #fff9f9;
 }
 
 .flex_column_gap_24 {
@@ -108,11 +108,15 @@ button.primary {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   border-radius: 8px;
-  background-color: #d4566f;
+  background-color: #c73259;
   border: none;
   width: fit-content;
   height: fit-content;
   box-shadow: 0rem 0.25rem 0.25rem 0rem #00000040;
+}
+
+button.primary > a {
+  color: #ffffff;
 }
 
 button.primary:hover {
@@ -143,7 +147,7 @@ button.secondary > a {
   font-style: Semibold;
   font-size: 22px;
   line-height: 100%;
-  color: #d4566f;
+  color: #c73259;
   text-wrap: nowrap;
 }
 
@@ -174,7 +178,7 @@ h1 {
   font-style: Medium;
   font-size: 64px;
   line-height: 100%;
-  color: #d4566f;
+  color: #c73259;
   margin-block-end: 0;
   margin-block-start: 0;
 }
