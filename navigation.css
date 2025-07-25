@@ -3,6 +3,8 @@
   justify-content: space-between;
   padding: 1rem 0rem;
   border-bottom: 1.5px solid #2e2e2e;
+  list-style-type: none;
+  margin: 0;
 }
 
 .nav_element {
