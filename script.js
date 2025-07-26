@@ -15,14 +15,41 @@ window.addEventListener("DOMContentLoaded", () => {
   loadComponent("../../navigation.html", "#header");
 });
 
+window.addEventListener("resize", () => {
+  const openButton = document.getElementById("nav_open_button");
+  const closeButton = document.getElementById("nav_close_button");
+  const nav = document.getElementById("nav_list");
+  if (window.innerWidth > 743) {
+    openButton.style.display = "none";
+    closeButton.style.display = "none";
+    nav.style.display = "flex";
+  } else {
+    const isClosed =
+      openButton.style.display === "none" ||
+      (openButton.style.display === "block" &&
+        closeButton.style.display === "none");
+    if (isClosed) {
+      openButton.style.display = "block";
+      nav.style.display = "none";
+      closeButton.style.display = "none";
+    } else {
+      openButton.style.display = "none";
+      nav.style.display = "flex";
+      closeButton.style.display = "block";
+    }
+  }
+});
+
 function openMenu() {
   document.getElementById("nav_open_button").style.display = "none";
   document.getElementById("nav_close_button").style.display = "block";
 
   document.getElementById("nav_list").style.display = "flex";
+  document.body.style.overflow = "hidden";
 }
 
 function closeMenu() {
+  document.body.style.overflow = "visible";
   document.getElementById("nav_open_button").style.display = "block";
   document.getElementById("nav_close_button").style.display = "none";
   document.getElementById("nav_list").style.display = "none";
@@ -33,23 +60,31 @@ function setActiveElement(elem) {
     document.getElementsByClassName("active")[0].classList.remove("active");
   }
 
+  if (document.getElementsByClassName("nav_element").length === 0) {
+    return;
+  }
+
   switch (elem) {
     case "about":
       document.getElementsByClassName("nav_element")[0].classList.add("active");
-      return;
+      break;
     case "japan":
       document.getElementsByClassName("nav_element")[1].classList.add("active");
-      return;
+      break;
     case "laos":
       document.getElementsByClassName("nav_element")[2].classList.add("active");
-      return;
+      break;
     case "korea":
       document.getElementsByClassName("nav_element")[3].classList.add("active");
-      return;
+      break;
     case "nextTrips":
       document.getElementsByClassName("nav_element")[4].classList.add("active");
-      return;
+      break;
     default:
       document.getElementsByClassName("nav_element")[0].classList.add("active");
+  }
+
+  if (window.innerWidth <= 743) {
+    document.getElementById("nav_list").style.display = "none";
   }
 }

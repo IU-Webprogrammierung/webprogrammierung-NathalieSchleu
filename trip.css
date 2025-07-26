@@ -105,7 +105,7 @@
   }
 }
 
-@media (max-width: 743px) {
+@media (max-width: 768px) {
   .trip_reasons,
   .trip_favoritePlaces,
   .trip_more_pictures {
@@ -132,7 +132,12 @@
     flex-direction: column;
   }
 
+  .trip_more_pictures {
+    align-items: center;
+  }
+
+  .trip_favoritePlaces_image_wrapper > img,
   .trip_more_pictures > img {
-    min-width: 100%;
+    max-width: 400px;
   }
 }
