@@ -73,9 +73,10 @@
     display: block;
     float: right;
     border: none;
-    padding: 0 !important;
-    margin: 0;
     background: none;
+    border: none;
+    padding: 10px; /* adds invisible hit area */
+    margin: -10px;
   }
 
   #nav_close_button {

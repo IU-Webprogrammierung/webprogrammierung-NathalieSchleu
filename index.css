@@ -17,6 +17,8 @@
 
 body {
   background-color: #fff9f9;
+  padding: 0;
+  margin: 0;
 }
 
 .flex_column_gap_24 {
@@ -68,7 +70,7 @@ body {
   gap: 1.5rem;
 }
 
-.main_myTrip > button {
+.main_myTrip > a {
   margin: 0 auto;
 }
 
@@ -100,7 +102,7 @@ body {
   gap: 48px;
 }
 
-button.primary {
+a.primary {
   opacity: 1;
   padding-top: 1rem;
   padding-right: 1.5rem;
@@ -112,17 +114,26 @@ button.primary {
   width: fit-content;
   height: fit-content;
   box-shadow: 0rem 0.25rem 0.25rem 0rem #00000040;
-}
-
-button.primary > a {
+  position: relative;
   color: #ffffff;
+  z-index: 1;
 }
 
-button.primary:hover {
+a.primary:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: -10px;
+  left: -10px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+a.primary:hover {
   background-color: #ffa6b7;
 }
 
-button.secondary {
+a.secondary {
   width: fit-content;
   height: fit-content;
   opacity: 1;
@@ -136,11 +147,11 @@ button.secondary {
   box-shadow: 0rem 4px 4px 0rem #00000040;
 }
 
-button.secondary:hover {
+a.secondary:hover {
   background-color: #ffebf2;
 }
 
-button.secondary > a {
+a.secondary {
   font-family: Segoe UI;
   font-weight: 600;
   font-style: Semibold;
@@ -334,9 +345,6 @@ footer > span {
     font-size: 14px !important;
     line-height: 100%;
     letter-spacing: 0%;
-  }
-
-  button {
     padding: 0.5rem !important;
     box-shadow: none !important;
   }
