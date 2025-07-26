@@ -73,7 +73,7 @@
   margin-right: 1.5rem;
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 743gitpx) and (max-width: 1023px) {
   .nextTrips {
     gap: 8px;
   }
@@ -120,7 +120,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 743px) {
   #nextTrips_banner {
     flex-direction: column;
     padding: 1rem;
