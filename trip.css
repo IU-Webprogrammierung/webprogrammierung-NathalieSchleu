@@ -116,16 +116,10 @@
     flex-direction: column;
   }
 
-  .trip_reasons {
-    gap: 1rem;
-  }
-
-  .trip_funFacts_list {
-    gap: 1rem;
-  }
-
+  .trip_reasons,
+  .trip_funFacts_list,
   .trip_favoritePlaces {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .trip_favoritePlaces_content {
