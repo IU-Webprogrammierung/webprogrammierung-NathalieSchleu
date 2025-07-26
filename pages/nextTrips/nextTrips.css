@@ -98,6 +98,26 @@
   #nextTrips_banner {
     padding: 0.5rem;
   }
+
+  .nextTrips_list > li:nth-of-type(1):before {
+    content: url("../../images/location_tablet.png");
+    margin-right: 1.5rem;
+  }
+
+  .nextTrips_list > li:nth-of-type(2):before {
+    content: url("../../images/timelapse_tablet.png");
+    margin-right: 1.5rem;
+  }
+
+  .nextTrips_list > li:nth-of-type(3):before {
+    content: url("../../images/local_fire_department_tablet.png");
+    margin-right: 1.5rem;
+  }
+
+  .nextTrips_list > li:nth-of-type(4):before {
+    content: url("../../images/paid_tablet.png");
+    margin-right: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -128,5 +148,25 @@
 
   .nextTrip_content {
     padding: 0 0.5rem;
+  }
+
+  .nextTrips_list > li:nth-of-type(1):before {
+    content: url("../../images/location_mobile.png");
+    margin-right: 1.5rem;
+  }
+
+  .nextTrips_list > li:nth-of-type(2):before {
+    content: url("../../images/timelapse_mobile.png");
+    margin-right: 1.5rem;
+  }
+
+  .nextTrips_list > li:nth-of-type(3):before {
+    content: url("../../images/local_fire_department_mobile.png");
+    margin-right: 1.5rem;
+  }
+
+  .nextTrips_list > li:nth-of-type(4):before {
+    content: url("../../images/paid_mobile.png");
+    margin-right: 1.5rem;
   }
 }

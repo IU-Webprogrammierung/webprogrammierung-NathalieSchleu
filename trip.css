@@ -103,6 +103,10 @@
   .trip_more_pictures {
     gap: 0.5rem;
   }
+
+  .trip_funFacts_list > li::before {
+    content: url("./images/emoji_objects_tablet.png");
+  }
 }
 
 @media (max-width: 768px) {
@@ -139,5 +143,9 @@
   .trip_favoritePlaces_image_wrapper > img,
   .trip_more_pictures > img {
     max-width: 400px;
+  }
+
+  .trip_funFacts_list > li::before {
+    content: url("./images/emoji_objects_mobile.png");
   }
 }
