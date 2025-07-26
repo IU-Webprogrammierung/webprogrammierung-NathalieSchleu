@@ -4,6 +4,7 @@ function loadComponent(url, selector) {
     .then((html) => (document.querySelector(selector).innerHTML = html))
     .then(() => {
       const currentPage = window.location.href;
+
       const elem = currentPage.split("/").slice(-1)[0].split(".")[0];
       setActiveElement(elem);
     })
@@ -11,8 +12,11 @@ function loadComponent(url, selector) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  loadComponent("../../footer.html", "#footer");
-  loadComponent("../../navigation.html", "#header");
+  const currentPage = window.location.href;
+  if (!currentPage.includes("index.html")) {
+    loadComponent("../../footer.html", "#footer");
+    loadComponent("../../navigation.html", "#header");
+  }
 });
 
 window.addEventListener("resize", () => {
