@@ -35,6 +35,7 @@ body {
 
 #main_banner {
   background-image: url("./images/banner.webp");
+  background-size: cover;
   width: 100%;
   display: flex;
   justify-content: center;
