@@ -4,8 +4,8 @@ function loadComponent(url, selector) {
     .then((html) => (document.querySelector(selector).innerHTML = html))
     .then(() => {
       const currentPage = window.location.href;
-
       const elem = currentPage.split("/").slice(-1)[0].split(".")[0];
+
       setActiveElement(elem);
     })
     .catch((err) => console.error("Component load failed:", err));
@@ -91,4 +91,22 @@ function setActiveElement(elem) {
   if (window.innerWidth <= 743) {
     document.getElementById("nav_list").style.display = "none";
   }
+}
+
+window.onscroll = function () {
+  showOrHideBackToTopButton();
+};
+
+function showOrHideBackToTopButton() {
+  const backToTopButton = document.getElementById("trip_back_to_top_button");
+  // only show once user has scrolled a bit
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "flex";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }

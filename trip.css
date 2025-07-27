@@ -95,6 +95,21 @@
   gap: 24px;
 }
 
+#trip_back_to_top_button {
+  display: none;
+  justify-content: end;
+  position: sticky;
+  bottom: 1.5rem;
+}
+
+#trip_back_to_top_button > a {
+  display: flex;
+}
+
+#trip_back_to_top_button > a::after {
+  content: url("./images/arrow_upward.png");
+}
+
 @media (max-width: 1023px) {
   .trip_favoritePlaces_content {
     padding: 0rem 1rem;
@@ -141,5 +156,13 @@
 
   .trip_funFacts_list > li::before {
     content: url("./images/emoji_objects_mobile.png");
+  }
+
+  #trip_back_to_top_button > a {
+    align-items: center;
+  }
+
+  #trip_back_to_top_button > a::after {
+    content: url("./images/arrow_upward_mobile.png");
   }
 }
