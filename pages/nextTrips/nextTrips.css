@@ -64,7 +64,7 @@
 }
 
 .nextTrips_list > li:nth-of-type(3):before {
-  content: url("../../images/local_fire_deparment.png");
+  content: url("../../images/local_fire_department.png");
   margin-right: 1.5rem;
 }
 
@@ -73,7 +73,7 @@
   margin-right: 1.5rem;
 }
 
-@media (min-width: 743gitpx) and (max-width: 1023px) {
+@media (min-width: 743px) and (max-width: 1023px) {
   .nextTrips {
     gap: 8px;
   }
