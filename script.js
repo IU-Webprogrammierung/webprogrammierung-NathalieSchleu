@@ -1,8 +1,11 @@
+// loads a component and replaces html content of selector
+// only works if page is hosted on a server (not when opened with file://)
 function loadComponent(url, selector) {
   fetch(url)
     .then((r) => (r.ok ? r.text() : Promise.reject(r.statusText)))
     .then((html) => (document.querySelector(selector).innerHTML = html))
     .then(() => {
+      // sets active item on navigation based on current page
       const currentPage = window.location.href;
       const elem = currentPage.split("/").slice(-1)[0].split(".")[0];
 
@@ -11,6 +14,7 @@ function loadComponent(url, selector) {
     .catch((err) => console.error("Component load failed:", err));
 }
 
+// when content is loaded, footer and header are added to all pages except index.html
 window.addEventListener("DOMContentLoaded", () => {
   const currentPage = window.location.href;
   if (!currentPage.includes("index.html")) {
@@ -19,11 +23,13 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// when window is resized, show navigation correctly for mobile screens
 window.addEventListener("resize", () => {
   const openButton = document.getElementById("nav_open_button");
   const closeButton = document.getElementById("nav_close_button");
   const nav = document.getElementById("nav_list");
   if (window.innerWidth > 743) {
+    // hide open and close button for bigger screens
     openButton.style.display = "none";
     closeButton.style.display = "none";
     nav.style.display = "flex";
@@ -33,10 +39,12 @@ window.addEventListener("resize", () => {
       (openButton.style.display === "block" &&
         closeButton.style.display === "none");
     if (isClosed) {
+      // show open button if menu is closed
       openButton.style.display = "block";
       nav.style.display = "none";
       closeButton.style.display = "none";
     } else {
+      // show close button and mobile menu if open
       openButton.style.display = "none";
       nav.style.display = "flex";
       closeButton.style.display = "block";
@@ -44,6 +52,7 @@ window.addEventListener("resize", () => {
   }
 });
 
+// opens mobile menu
 function openMenu() {
   document.getElementById("nav_open_button").style.display = "none";
   document.getElementById("nav_close_button").style.display = "block";
@@ -52,6 +61,7 @@ function openMenu() {
   document.body.style.overflow = "hidden";
 }
 
+// closes mobile menu
 function closeMenu() {
   document.body.style.overflow = "visible";
   document.getElementById("nav_open_button").style.display = "block";
@@ -59,6 +69,7 @@ function closeMenu() {
   document.getElementById("nav_list").style.display = "none";
 }
 
+// sets current element in navigation menu
 function setActiveElement(elem) {
   if (document.getElementsByClassName("active")[0]) {
     document.getElementsByClassName("active")[0].classList.remove("active");
